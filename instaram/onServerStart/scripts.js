@@ -7,13 +7,13 @@ module.exports = function (app) {
     .then((jsonObj)=>{
         let collection = app.schema.battles;
         jsonObj.forEach(object => {
-            /*app.crud.createDocument(object, collection, function(err, doc) {
+            app.crud.createDocument(object, collection, function(err, doc) {
                 if(err){
                     console.log("Error in saving doc : ",err)
                 }else{
                     console.log("Doc inserted");
                 }
-            });*/
+            });
         });
     });
      
